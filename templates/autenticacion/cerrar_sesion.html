@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cerrar Sesión</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% load static %}
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/images/OSE.png"> 
+
+    <style>
+      /* Estilos personalizados aquí si es necesario */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hasta luego!</h1>
+        <p>Has cerrado sesión correctamente.</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+
+    <!-- Scripts opcionales aquí si es necesario -->
+</body>
+</html>
